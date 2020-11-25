@@ -1,0 +1,59 @@
+#include<iostream>
+#include<vector>
+
+using std::vector;
+using std::cout;
+using std::endl;
+using std::cin;
+
+int main()
+{
+    vector<int>myarr;
+    int token;
+    cout<<"Please enter integers"<<endl;
+    
+    while(cin>>token)
+    {
+        myarr.push_back(token);
+    }
+    cout<<endl<<endl;
+    cout<<"Your integers are:"<<endl;
+    for(vector<int>::size_type j=0;j!=myarr.size();++j)
+    {
+        cout<<myarr[j]<<endl;
+    }
+    cout<<endl;
+    int max=myarr[0];
+    int next;
+    vector<int>::size_type i=1;
+    while (i!=myarr.size())
+    {
+        next=myarr[i];
+        if(max<next)
+        {
+            max=next;
+    }
+    ++i;
+}
+cout<<endl<<"and your largest integer is:"<<max<<endl<<endl;
+return 0;
+}
+
+
+
+//output
+Please enter integers                                                                                                                          
+2                                                                                                                                              
+3                                                                                                                                              
+5                                                                                                                                              
+3                                                                                                                                              
+                                                                                                                                               
+                                                                                                                                               
+Your integers are:                                                                                                                             
+2                                                                                                                                              
+3                                                                                                                                              
+5                                                                                                                                              
+3                                                                                                                                              
+                                                                                                                                               
+                                                                                                                                               
+and your largest integer is:5          
