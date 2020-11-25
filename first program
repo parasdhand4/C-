@@ -1,0 +1,7 @@
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World!\n"<< "this is what i do"<<std::endl;
+    return 0;
+}
